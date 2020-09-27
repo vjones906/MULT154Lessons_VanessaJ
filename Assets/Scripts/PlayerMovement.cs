@@ -22,7 +22,7 @@ public class PlayerMovement : NetworkBehaviour
         spawnPoints = GameObject.FindGameObjectsWithTag("Respawn");
     }
 
-    private void Update()
+    public void Update()
     {
         if (!isLocalPlayer)
         {
@@ -54,6 +54,16 @@ public class PlayerMovement : NetworkBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, -40);
         }
     }
+    void OnDrawGizmos()
+    {
+        // Draw a semitransparent blue cube at the transforms position
+        Gizmos.color = Color.blue;
+        Gizmos.DrawCube(rbPlayer.transform.position, new Vector3(7, 7, 7));
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(transform.position, direction * 10);
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawRay(transform.position, rbPlayer.velocity * 5);
+    }
 
     private void Respawn()
     {
@@ -63,6 +73,7 @@ public class PlayerMovement : NetworkBehaviour
             index++;
         }
         rbPlayer.MovePosition(spawnPoints[index].transform.position);
+        rbPlayer.velocity = Vector3.zero;
     }
 
     private void OnTriggerExit(Collider other)
