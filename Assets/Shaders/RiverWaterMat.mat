@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RiverWaterMat
+  m_Shader: {fileID: -6465566751694194690, guid: 2b70df0b499dc6446bde1b5130e773b7,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_15A59B6E: 1
+    - Vector1_42C3A7E6: 0.7
+    - Vector1_45FEC28C: 2
+    - Vector1_93AFC472: 4
+    - Vector1_AB0D92C3: 0.5
+    - Vector1_CEB9D47: 8
+    - Vector1_D44AAF00: 0.7
+    - Vector1_E0559D04: 0.1
+    - Vector1_F170D5EA: 4
+    - Vector1_FEDF27E1: 0.28
+    m_Colors:
+    - Color_2A1466D5: {r: 1, g: 0.9243045, b: 0.74056596, a: 0.1411765}
+    - Color_9A69D4DB: {r: 0, g: 0.7830188, b: 0.77519256, a: 0}
+    - Color_BAADE6C1: {r: 0.43921566, g: 0.6582475, b: 1, a: 1}
+    - Color_FF05F44E: {r: 0.38207546, g: 0.8735614, b: 1, a: 0}
+    - Vector2_9B91792A: {r: 0.4, g: -0.09, b: 0, a: 0}
+    - Vector2_E2BD2390: {r: 0.6, g: 0, b: 0, a: 0}
+    - WHColor: {r: 0.38207546, g: 0.8735614, b: 1, a: 0}
